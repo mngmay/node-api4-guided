@@ -19,8 +19,8 @@ module.exports = {
   },
 
   production: {
-    client: "pg",
-    connection: process.env.DATABASE_URL,
+    client: "pg", // install this package
+    connection: process.env.DATABASE_URL, // heroku sets this env variable
     migrations: {
       directory: "./data/migrations"
     },
